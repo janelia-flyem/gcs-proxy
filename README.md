@@ -18,7 +18,7 @@ Upon success, you will see a SUCCESS message containing the image name (gcr.io/*
 
 To deploy the container image:
 
-Deploy using the following command:
+Deploy using the following command after replacing **PROJECT-ID** with your GCP project ID:
 
 ```
 gcloud run deploy --image gcr.io/PROJECT-ID/gcs-proxy
@@ -26,11 +26,9 @@ gcloud run deploy --image gcr.io/PROJECT-ID/gcs-proxy
 
 If prompted to enable the API, Reply **y** to enable.
 
-Replace **PROJECT-ID** with your GCP project ID.
-
-1. You will be prompted for the service name: press Enter to accept the default name, helloworld.
-2. You will be prompted for region: select the region of your choice, for example us-central1.
-3. You will be prompted to allow unauthenticated invocations: respond y .
+1. You will be prompted for the service name: press Enter to accept the default name, **gcs-proxy**.
+2. You will be prompted for region: select the region of your choice, for example **us-central1**.
+3. You will be prompted to allow unauthenticated invocations: respond **y** .
 
 Then wait a few moments until the deployment is complete. On success, the command line displays the service URL.
 
